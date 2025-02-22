@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="expenceTracker.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-div">
+            <h1>Simple Expence Tracker</h1>
+            <div class="cards">
+                <div class="dCard">
+                    <div class="Deposit-Card">
+                        <h1>Total Deposit</h1>
+                        <h3> $ <span id="td">0.00</span></h3>
+                    </div>
+                </div>
+                <div class="wCard">
+                    <div class="Withdraw-Card">
+                        <h1>Total Withdraw</h1>
+                        <h3> $ <span id="tw">0.00</span></h3>
+                    </div>
+                </div>
+                <div class="bCard">
+                    <div class="Balance-Card">
+                        <h1>Total Balance</h1>
+                        <h3> $ <span id="tb">0.00</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form">
+                <div class="inputs">
+                    <input type="date" id="date" required>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="account" placeholder="Enter Account Number" required>
+                </div>
+                <div class="textbox inputs">
+                    <input type="number" id="amount" placeholder="Enter Amount" required>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="btn1">
+                    <button id="Btn1" onclick="deposit()">Deposit</button>
+                </div>
+                <div class="btn2">
+                    <button id="Btn2" onclick="withdraw()">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="expenceTracker.js"></script>
+</body>
+</html>
